@@ -135,6 +135,40 @@ int **func(int arr[][3]){
 
 <hr>
 
+## Matrix Arithmetic
+
+Performing arithmetic on two different arrays:
+
+```c
+int i, j;
+int row_size, column_size;
+
+row_size = 2;
+column_size = 2;
+
+int first[row_size][column_size] = {
+    {1, 2},
+    {3, 4}
+};
+
+int second[row_size][column_size] = {
+    {5, 6},
+    {7, 8}
+};
+
+int results[row_size][column_size];
+ 
+for (i = 0; i < row_size; i++) {
+    for (j = 0 ; j < column_size; j++) {
+        results[i][j] = first[i][j] + second[i][j]; // change arithmetic symbol
+        printf("%d\t", results[i][j]);
+    }
+    printf("\n");
+}
+
+```
+
+
 ### Sources
 
 - [Multi-dimensional Arrays in C](https://www.tutorialspoint.com/cprogramming/c_multi_dimensional_arrays.htm)
@@ -142,3 +176,5 @@ int **func(int arr[][3]){
 - [Passing 2-D Array to a Function in C](https://overiq.com/c-programming-101/passing-2-d-array-to-a-function-in-c/)
 - [Returning Two Dimensional Array from a Function in C
 ](https://followtutorials.com/2011/08/returning-two-dimensional-array-from-a-function-in-c.html)
+- [Matrix addition in C
+](https://www.programmingsimplified.com/c-program-add-matrices)
