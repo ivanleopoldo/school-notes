@@ -105,7 +105,7 @@ void func(int arr[][]){
 Another way to declare a function would be:
 
 ```c
-void func(int (*arr)[]){
+void func(int (*arr)[3]){
     // do this
 }
 ```
@@ -168,6 +168,7 @@ for (i = 0; i < row_size; i++) {
 
 ```
 
+<hr>
 
 ### Sources
 
